@@ -18,10 +18,8 @@ class CreateDocumentsTable extends Migration
             $table->string('name');
             $table->string('folder');
             $table->string('keywords_in');
-            $table->string('keywords_out');
-            $table->timestamps();
-    
-            
+            $table->string('keywords_out')->nullable();
+            $table->timestamps();          
         });
     }
 
