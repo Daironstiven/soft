@@ -12,13 +12,15 @@
         <!-- Styles -->
         <style>
             html, body {
-                
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
+                html, body {
+                /* la imagen va ser mostrada a pantalla completa */
+                background-image: url(img/fondo1.jpg);
+                background-size: 250px 50px; 
+                background-size: 100% 100%; /* cubre todo todo el contenedor */
+                background-attachment: fixed; /* imagen fija al hacer scroll */
+               
+            } 
+               
             }
 
             .full-height {
@@ -58,6 +60,11 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
+            .links > a:hover{
+                 background-color:black;
+                 font-size:25px;
+                 padding: 8px;
+            }
 
             .m-b-md {
                 margin-bottom: 30px;
@@ -82,7 +89,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Reto Senasoft
+                Administrador de archivos
                 </div>
 
                 
